@@ -1,0 +1,17 @@
+<ActionBar class="action-bar">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+  <Label class="action-bar-title" text="Detalle de tarea"></Label>
+</ActionBar>
+
+<ScrollView>
+  <StackLayout class="page detail-page" *ngIf="task">
+    <Label class="detail-heading" text="Detalle de tarea"></Label>
+    <Label class="detail-title" [text]="task.title"></Label>
+    <Label class="detail-description" [text]="task.description" textWrap="true"></Label>
+
+    <GridLayout columns="auto, *" class="status-row">
+      <Label col="0" class="status-label" text="Estado:"></Label>
+      <Label col="1" class="status-value" [text]="task.status"></Label>
+    </GridLayout>
+  </StackLayout>
+</ScrollView>

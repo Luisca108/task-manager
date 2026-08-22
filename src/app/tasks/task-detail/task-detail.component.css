@@ -1,0 +1,48 @@
+.page {
+  padding: 20;
+  background-color: #f4f7fb;
+}
+
+.detail-page {
+  min-height: 100%;
+}
+
+.detail-heading {
+  font-size: 16;
+  color: #4b5563;
+  margin-bottom: 16;
+}
+
+.detail-title {
+  font-size: 26;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 12;
+}
+
+.detail-description {
+  font-size: 17;
+  color: #374151;
+  line-height: 5;
+  margin-bottom: 20;
+}
+
+.status-row {
+  background-color: #ffffff;
+  border-radius: 8;
+  border-width: 1;
+  border-color: #d9e2ec;
+  padding: 14;
+}
+
+.status-label {
+  font-size: 16;
+  font-weight: bold;
+  color: #111827;
+  margin-right: 8;
+}
+
+.status-value {
+  font-size: 16;
+  color: #047857;
+}
