@@ -1,0 +1,51 @@
+.page {
+  padding: 16;
+  background-color: #f4f7fb;
+}
+
+.tasks-title {
+  font-size: 28;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 4;
+}
+
+.tasks-count {
+  font-size: 15;
+  color: #4b5563;
+  margin-bottom: 8;
+}
+
+.platform-message {
+  font-size: 13;
+  color: #2563eb;
+  margin-bottom: 16;
+}
+
+.task-card {
+  background-color: #ffffff;
+  border-radius: 8;
+  margin-bottom: 12;
+  border-width: 1;
+  border-color: #d9e2ec;
+}
+
+.task-title {
+  font-size: 18;
+  font-weight: bold;
+  color: #111827;
+}
+
+.task-summary {
+  font-size: 14;
+  color: #4b5563;
+  margin-top: 4;
+}
+
+.task-status {
+  font-size: 12;
+  color: #047857;
+  background-color: #d1fae5;
+  border-radius: 8;
+  padding: 4 8;
+}

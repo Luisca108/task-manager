@@ -1,0 +1,28 @@
+<ActionBar class="action-bar">
+  <NavigationButton visibility="hidden"></NavigationButton>
+  <GridLayout columns="50, *">
+    <Label class="action-bar-title" text="Mis Tareas" colSpan="2"></Label>
+    <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+  </GridLayout>
+</ActionBar>
+
+<ScrollView>
+  <StackLayout class="page">
+    <Label class="tasks-title" text="Mis Tareas"></Label>
+    <Label class="tasks-count" [text]="tasks.length + ' tareas pendientes'"></Label>
+    <Label class="platform-message" [text]="platformMessage"></Label>
+
+    <StackLayout
+      *ngFor="let task of tasks"
+      class="task-card"
+      (tap)="onTaskTap(task)"
+      automationText="task-card"
+    >
+      <GridLayout columns="*, auto" rows="auto, auto">
+        <Label row="0" col="0" class="task-title" [text]="task.title"></Label>
+        <Label row="0" col="1" class="task-status" [text]="task.status"></Label>
+        <Label row="1" col="0" colSpan="2" class="task-summary" [text]="task.summary"></Label>
+      </GridLayout>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>
